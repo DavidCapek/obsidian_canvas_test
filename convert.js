@@ -1,11 +1,13 @@
 const fs = require('fs').promises;
-const { unified } = require('unified');
-const parse = require('rehype-parse');
-const rehypeJsonCanvas = require('rehype-jsoncanvas');
-const stringify = require('rehype-stringify');
 
 async function convertCanvas(inputFile, outputFile) {
   try {
+    // Use dynamic import() for ESM packages
+    const { unified } = await import('unified');
+    const parse = (await import('rehype-parse')).default;
+    const rehypeJsonCanvas = (await import('rehype-jsoncanvas')).default;
+    const stringify = (await import('rehype-stringify')).default;
+
     const canvasData = await fs.readFile(inputFile, 'utf-8');
     const html = `<!DOCTYPE html><html><head><meta charset="utf-8"></head><body><img src="${inputFile}"></body></html>`; // Create a basic HTML structure with the canvas as an image
 
@@ -22,6 +24,7 @@ async function convertCanvas(inputFile, outputFile) {
     process.exit(1); // Exit with an error code
   }
 }
+
 //get arguments from command line
 const args = process.argv.slice(2);
 if (args.length != 2)
