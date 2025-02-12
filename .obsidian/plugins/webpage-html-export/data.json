@@ -181,7 +181,7 @@
   "titleProperty": "title",
   "onlyExportModified": false,
   "deleteOldFiles": true,
-  "exportPreset": "online",
+  "exportPreset": "raw",
   "openAfterExport": true,
   "filePickerBlacklist": [
     "(^|\\/)node_modules\\/",
