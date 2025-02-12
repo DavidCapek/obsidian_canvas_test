@@ -12,14 +12,18 @@ jobs:
         with:
           node-version: 20.x
 
+      - name: Test npx  # Keep this for debugging
+        run: npx cowsay "Hello from npx"
+
       - name: Convert .canvas to HTML
         run: |
           set -e
           mkdir -p dist
+          npm install rehype-jsoncanvas
           for file in canvases/*.canvas; do
             filename=$(basename "$file")
             filename_no_ext="${filename%.*}"
-            npx rehype-jsoncanvas "$file" -o "dist/${filename_no_ext}.html"
+            ./node_modules/.bin/rehype-jsoncanvas "$file" -o "dist/${filename_no_ext}.html"
           done
 
       - name: Deploy
