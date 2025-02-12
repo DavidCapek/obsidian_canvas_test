@@ -1,5 +1,5 @@
 {
-  "settingsVersion": "1.8.01",
+  "settingsVersion": "1.8.1-2b",
   "exportOptions": {
     "createDocumentContainer": true,
     "createPusherElement": true,
@@ -7,8 +7,17 @@
     "postProcess": true,
     "displayProgress": true,
     "inlineHTML": false,
-    "exportPath": "",
-    "filesToExport": [],
+    "exportPath": "/output",
+    "filesToExport": [
+      "Geometria",
+      "Matrici",
+      "Quadratiche",
+      "Sistemi lineari",
+      "Spazi vettoriali",
+      "Vettori",
+      "index.md",
+      "Introduzione al corso.md"
+    ],
     "addBodyClasses": true,
     "addMathjaxStyles": true,
     "addHeadTag": true,
@@ -16,7 +25,7 @@
     "addTitle": true,
     "backlinkOptions": {
       "featureId": "backlinks",
-      "enabled": true,
+      "enabled": false,
       "displayTitle": "Backlinks",
       "featurePlacement": {
         "selector": ".footer",
@@ -105,7 +114,7 @@
     },
     "graphViewOptions": {
       "featureId": "graph-view",
-      "enabled": true,
+      "enabled": false,
       "displayTitle": "Graph View",
       "featurePlacement": {
         "selector": "#right-sidebar-content",
@@ -164,20 +173,20 @@
     "flattenExportPaths": false,
     "fixLinks": true,
     "siteURL": "",
-    "siteName": "obsidian_canvas_test",
+    "siteName": "Geometria e Algebra Lineare",
     "faviconPath": "",
     "customHeadPath": "",
     "iconEmojiStyle": "Native",
     "authorName": "",
-    "exportRoot": "",
+    "exportRoot": "/",
     "includePluginCSS": [],
     "includeSvelteCSS": true
   },
   "logLevel": "warning",
   "titleProperty": "title",
-  "onlyExportModified": true,
+  "onlyExportModified": false,
   "deleteOldFiles": true,
-  "exportPreset": "website",
+  "exportPreset": "online",
   "openAfterExport": true,
   "filePickerBlacklist": [
     "(^|\\/)node_modules\\/",
