@@ -1,4 +1,5 @@
 # Test index.md
 
-[[test.canvas]]
+[[obsidain]]
+[[test]]
 ![[test.canvas]]
