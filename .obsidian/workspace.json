@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b4db742cb0795a0e",
+        "id": "4a70d0f7528f4b70",
         "type": "tabs",
         "children": [
           {
-            "id": "fcfe5363d2931313",
+            "id": "c5be36b69b188ab1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -162,12 +162,13 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "fcfe5363d2931313",
+  "active": "0bd54a60b41df969",
   "lastOpenFiles": [
+    "test.canvas",
     "index.md",
+    "README.md",
     "action.yml",
     "test.canvas",
-    "canvases/test.canvas",
     "canvases",
     "convert.js~",
     "convert.js"
