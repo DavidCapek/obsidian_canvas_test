@@ -11,7 +11,8 @@
     "filesToExport": [
       "index.md",
       "obsidian.md",
-     "test.canvas" 
+      "test_md.md",
+      "test.canvas" 
     ],
     "addBodyClasses": true,
     "addMathjaxStyles": true,
@@ -20,7 +21,7 @@
     "addTitle": true,
     "backlinkOptions": {
       "featureId": "backlinks",
-      "enabled": false,
+      "enabled": true,
       "displayTitle": "Backlinks",
       "featurePlacement": {
         "selector": ".footer",
@@ -168,7 +169,7 @@
     "flattenExportPaths": false,
     "fixLinks": true,
     "siteURL": "",
-    "siteName": "Geometria e Algebra Lineare",
+    "siteName": "Testing",
     "faviconPath": "",
     "customHeadPath": "",
     "iconEmojiStyle": "Native",
