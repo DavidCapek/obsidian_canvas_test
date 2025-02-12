@@ -1,8 +1,5 @@
 name: Canvas to Website
-on:
-  push:
-    branches:
-      - main  # Or your main branch name
+on: [push]
 
 jobs:
   convert:
@@ -13,31 +10,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # String is preferred
-
-      - name: Install dependencies
-        run: npm install rehype-jsoncanvas  # Simplified install
+          node-version: 20.x
 
       - name: Convert .canvas to HTML
-        run: npx rehype-jsoncanvas test.canvas -o dist/index.html
-        # Check for dist folder existence *before* this step, as it can cause errors.
-        # We'll create it if needed.
-
-      - name: Create dist directory (if needed)
-        run: mkdir -p dist  # -p creates parent directories if they don't exist
-
-      - name: Debug - List files (Optional, for troubleshooting)
         run: |
-          echo "Files in the root directory:"
-          ls -la
-          echo "Files in the dist directory:"
-          ls -la dist
+          set -e
+          mkdir -p dist
+          for file in canvases/*.canvas; do
+            filename=$(basename "$file")
+            filename_no_ext="${filename%.*}"
+            npx rehype-jsoncanvas "$file" -o "dist/${filename_no_ext}.html"
+          done
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'  # Deploy ONLY on main branch push
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          # Consider using cname if you have a custom domain:
-          # cname: yourdomain.com
