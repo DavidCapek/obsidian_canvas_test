@@ -11,17 +11,10 @@
             "id": "fcfe5363d2931313",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "test.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "test"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -97,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for test"
+              "title": "Backlinks"
             }
           },
           {
@@ -116,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from test"
+              "title": "Outgoing links"
             }
           },
           {
@@ -145,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of test"
+              "title": "Outline"
             }
           }
         ]
@@ -173,7 +163,11 @@
   },
   "active": "fcfe5363d2931313",
   "lastOpenFiles": [
-    "convert.js",
-    "test.canvas"
+    "action.yml",
+    "test.canvas",
+    "canvases/test.canvas",
+    "canvases",
+    "convert.js~",
+    "convert.js"
   ]
 }
