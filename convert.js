@@ -30,6 +30,6 @@ if (args.length != 2)
     process.exit(1);
 }
 const inputFile = args[0];
-const outputFile = args[1];[[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUBnsYsse5bSJO3QWBBjV0VmEzvjADTyTpkRC0mgTvFbZHqvgyIBoYXCh203nKr07MLR5vXPjj1rKjd6UmCgH1g_3Mi83yeNJLyzMyX-DkdRuzq7XUlwtCDkQHTiBEPOyaICXPmI9h8qiJqb7GBBo7rgJmebexDj8npzAS3gV00%3D)]
+const outputFile = args[1];
 
 convertCanvas(inputFile, outputFile);
