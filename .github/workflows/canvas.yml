@@ -14,7 +14,7 @@ jobs:
       
       - name: Convert .canvas to HTML
         run: |
-          npm install rehype-jsoncanvas
+          npm install --save-dev rehype-jsoncanvas
           npx rehype-jsoncanvas "test.canvas" -o dist/index.html
           
       - name: Deploy
