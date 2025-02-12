@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"83d1b465bcf9e4e2","x":-322,"y":-92,"width":400,"height":400,"type":"group","label":"test"},
+		{"id":"8ebbddecdf04672c","x":-240,"y":-20,"width":250,"height":60,"type":"text","text":"Will it work?\n"}
+	],
+	"edges":[]
+}
