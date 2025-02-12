@@ -1,7 +1,8 @@
 {
 	"nodes":[
-		{"id":"83d1b465bcf9e4e2","x":-322,"y":-92,"width":400,"height":400,"type":"group","label":"test"},
-		{"id":"8ebbddecdf04672c","x":-240,"y":-20,"width":250,"height":60,"type":"text","text":"Will it work?\n"}
+		{"id":"83d1b465bcf9e4e2","type":"group","x":-322,"y":-92,"width":400,"height":400,"label":"test"},
+		{"id":"3b16103327577c77","x":-154,"y":79,"width":250,"height":60,"type":"text","text":""},
+		{"id":"8ebbddecdf04672c","type":"text","text":"Will it work?\n","x":-240,"y":-20,"width":250,"height":60}
 	],
 	"edges":[]
 }
